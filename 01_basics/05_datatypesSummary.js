@@ -46,3 +46,28 @@ console.log("hello world");
 console.log(typeof myFunction)
 
 console.log(typeof bigNumber)
+
+//**************************************8 */
+//stack (primitive ), Heap (Non primitive)
+//stack memory is allocated to th primitive values  , when stack memory is used we get a copy of declared varible
+// and changes will be reflected only in the copied value only
+//Heap memory is allocated to the non primitive values , when heap memory is used we get a reference of the original value 
+// and changes  value and changes will be reflected in the original value   only
+
+let myCollagename= "Ritik_ojha"
+let mynickname = myCollagename
+anothernickname= "Annu"
+
+console.log(mynickname,anothernickname)
+
+let userone = {
+    email : "hr@google.com",
+    upi: "hr@ybl"
+}
+
+let usertwo = userone
+usertwo.email ="admin@gmail.com" // change will get reflected in the original value
+
+console.log(userone.email);
+console.log(usertwo.email);
+
