@@ -1,3 +1,4 @@
+//JavaScript is case Sensitive
 const accountid=12345
 let accountemail="nick@google.com"
 var accpassword = "1234"
