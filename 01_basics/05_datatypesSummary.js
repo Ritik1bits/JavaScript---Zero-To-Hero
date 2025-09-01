@@ -54,9 +54,12 @@ console.log(typeof bigNumber)
 //Heap memory is allocated to the non primitive values , when heap memory is used we get a reference of the original value 
 // and changes  value and changes will be reflected in the original value   only
 
-let myCollagename= "Ritik_ojha"
+llet myCollagename= "Ritik_ojha"
 let mynickname = myCollagename
-anothernickname= "Annu"
+mynickname= "Annu"
+
+console.log(myCollagename)
+console.log(mynickname)
 
 console.log(mynickname,anothernickname)
 
