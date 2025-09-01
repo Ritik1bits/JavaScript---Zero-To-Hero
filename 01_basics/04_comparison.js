@@ -11,8 +11,8 @@
 
 
 //avoid these type of conversions but learn the concept
-// console.log(null>0)
-// console.log(null==0)
+// console.log(null>0) //null got converted into 0 thats why its is true
+// console.log(null==0) // converted to Nan
 // console.log(null>=0) // null got converted into 0 thats why its is true
  
 // console.log(undefined==0); // undefuned in all three cases as mention above in the case of null will give fasle
