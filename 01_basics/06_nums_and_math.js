@@ -6,7 +6,7 @@ const balance = new balance (100) // explicitly define a number type variable an
 console.log(balance)
 
 console.log(balanace.toString().length)
-console.log(balance.toFixed(1))
+console.log(balance.toFixed(1)) // toFixed is used to get decimal pricision value
 
 
 const otherNumber = 123.8966
