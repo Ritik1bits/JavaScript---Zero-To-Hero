@@ -2,7 +2,7 @@
 const score = 400
 console.log(score)
 
-const balance = new balance (100)
+const balance = new balance (100) // explicitly define a number type variable
 console.log(balance)
 
 console.log(balanace.toString().length)
