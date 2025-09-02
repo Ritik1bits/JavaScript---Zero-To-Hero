@@ -2,7 +2,7 @@
 const score = 400
 console.log(score)
 
-const balance = new balance (100) // explicitly define a number type variable and it produces output along with its datatype
+const balance = new balance (100) // explicitly define a number type variable and it produces output along with its typeof
 console.log(balance)
 
 console.log(balanace.toString().length)
