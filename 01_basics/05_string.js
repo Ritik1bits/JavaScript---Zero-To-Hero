@@ -6,7 +6,7 @@ console.log (name+repoCount+"Value");
 //modern concatenation method
 console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);
 
-const gameName = new String('hitesh-hc')
+const gameName = new String('hitesh-hc') // Another way to declare a string with its constructor
 console.log(gameName.length)
 console.log(gameName[3]);
 
