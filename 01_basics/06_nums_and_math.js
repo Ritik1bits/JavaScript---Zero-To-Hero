@@ -6,17 +6,17 @@ const balance = new balance (100) // explicitly define a number type variable an
 console.log(balance)
 
 console.log(balanace.toString().length)
-console.log(balance.toFixed(1)) // toFixed is used to get decimal pricision value
+console.log(balance.toFixed(1)) // toFixed is used to get decimal precision value
 
 
-const otherNumber = 123.8966
+const otherNumber = 123.8966 // important concept of precision
 console.log(otherNumber.toPrecision(3));
 console.log(otherNumber.toPrecision(4));
 console.log(otherNumber.toPrecision(2));
 
 
 const hundreds = 10000000
-console.log(hundreds.toLocaleString()) toLocaleString method is used to make a number readable having several zeros 
+console.log(hundreds.toLocaleString()) toLocaleString method is used to make a number readable having several zeros by adding commas according to indian or any other stand
 ,thus enhances the visibility of zero by adding commasconsole.log(hundreds.toLocaleString())
 console.log(hundreds.toLocaleString('en-IN'))  add commas according to indian standards*/
 
