@@ -8,14 +8,14 @@ console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);
 
 const gameName = new String('hitesh-hc') // Another way to declare a string with its constructor
 console.log(gameName.length)
-console.log(gameName[3]);
+console.log(gameName[3]); // this is how to access any key-value pair  of an object
 
 console.log(gameName.__proto__); // returns an empty  object {}
 console.log(gameName.toUpperCase(gameName));// it did not changeed the original value but a copied value due to call bye value method
  console.log(gameName.charAt(4));
  console.log(gameName.indexOf('t'));
  console.log(gameName.substring(8, 4)); // does not obey negative values as in slics , substring method is used to return a range of specific characters of any string 
-console.log(gameName.slice(-8,4)); // slice method can take negative values as well
+console.log(gameName.slice(-8,4)); // slice method can take negative values as well and can print values in reverse order as well
 
 
 const newString = ("    ritik-ojha  ")
