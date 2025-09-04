@@ -18,6 +18,7 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userfullname.firstname); // use dot to open object within objects
+//use tools such as JSON formatter to convert api into code to read and analyse better.
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
