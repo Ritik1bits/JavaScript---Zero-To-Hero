@@ -57,7 +57,7 @@ users[1].email
 // console.log(tinderUser.hasOwnProperty('isLoggedIn')); // mehtod to ask if an object has a particular property like 'isLoggedIn'
 
 
-const course = {
+const course = {                 
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
@@ -65,13 +65,14 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course  //  object destructuring({courseInstructor: instructor}) ,enhances readibility same concept is used in react as well
 
 // console.log(courseInstructor);
 console.log(instructor);
 
-// {
-//     "name": "hitesh",
+// {  // when we use fetch method to call api , api fetches result(cab=n be an object or an array) in json format(similar to object but not same)  where keys will always be syntaxwise string , and values will also be string apart from boolean, number type
+//   this json result is converted into an object to extract values  
+"name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
