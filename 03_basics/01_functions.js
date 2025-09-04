@@ -1,4 +1,4 @@
-
+// function defintion
 function sayMyName(){
     console.log("H");
     console.log("I");
@@ -8,12 +8,13 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+// sayMyName()                         // this is how to call and execute a function --> without parenthesis function will only be a refrence 
 
 // function addTwoNumbers(number1, number2){
 
 //     console.log(number1 + number2);
 // }
+// addTwoNumbers(2,6)                  // arguments are passed during calling a function
 
 function addTwoNumbers(number1, number2){
 
@@ -22,20 +23,23 @@ function addTwoNumbers(number1, number2){
     return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5)          // output of return can be stored in a variable while calling func simultaneously as mentioned
 
 // console.log("Result: ", result);
 
 
 function loginUserMessage(username = "sam"){
-    if(!username){
+    if(!username){                                 // within functions in JS empty string("") and 'undefined' is treated as false by dfault
         console.log("PLease enter a username");
-        return
+        return                                        // no statement can be written immediately after return statement as it is not allowed
     }
-    return `${username} just logged in`
+    return `${username} just logged in`               // another way to take arguments with return statement 
+    //
 }
 
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("hitesh"))            //calling func with arguments
+//console.log(loginUserMessage())                     // calling func without arguments will return 'undefined' and add it to meeage
+//console.log(loginUserMessage(""))                  // return message without argument since it is treated as empty string
 // console.log(loginUserMessage("hitesh"))
 
 
