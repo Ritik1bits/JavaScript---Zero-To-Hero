@@ -3,47 +3,50 @@ const user = {
     price: 999,
 
     welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
+        console.log(`${this.username} , welcome to website`); // this keyword is used to refer to current context.
         console.log(this);
     }
-
+     
 }
 
 // user.welcomeMessage()
-// user.username = "sam"
+// user.username = "sam" // current context changed from hitesh to sam
 // user.welcomeMessage()
 
 // console.log(this);
 
+// global object in browser is window object
+
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); // the above mechanism of 'this' keyword does not work in  function
 // }
 
 // chai()
 
 // const chai = function () {
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); // returns undefined  since mechanism of 'this' keyword does not work in this type of  function too
 // }
 
-const chai =  () => {
+const chai =  () => { // Arrow function  syntax
     let username = "hitesh"
-    console.log(this);
+       // console.log(this.username)            // returns undefined , this does not work with arrow function as well
+          console.log(this);                    // returns empty object  // interview question
 }
 
 
 // chai()
 
-// const addTwo = (num1, num2) => {
-//     return num1 + num2
+// const addTwo = (num1, num2) => {     // basic arrow func syntac
+//     return num1 + num2                 // return statement will be used in arrow functions only when curly braces are explicitly used 
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// const addTwo = (num1, num2) =>  num1 + num2   //another way of writing  Arrow functions is implicit return where we dont use return statement
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => ( num1 + num2 ) // same as above 
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+const addTwo = (num1, num2) => ({username: "hitesh"}) // syntax used (both curly and round braces will be used ) to return object in an arrow function
 
 
 console.log(addTwo(3, 4))
