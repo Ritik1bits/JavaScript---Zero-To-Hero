@@ -43,32 +43,33 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){            // spread operator is also called as Rest operator depending on use case
+                                                            //when rest operator used with single parameter  then function returns all the given arguments in an array , which is not possible withour rest operator
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
-
+// console.log(calculateCartPrice(200, 400, 500, 2000)) //   // val1, val2 got first two arguments remaining is sent to another array
+   
 const user = {
     username: "hitesh",
     prices: 199
 }
 
-function handleObject(anyobject){
+function handleObject(anyobject){                      // this is how to pass object  into function
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
 // handleObject(user)
-handleObject({
+handleObject({              //// this is how to directly  pass object  into function
     username: "sam",
     price: 399
 })
 
 const myNewArray = [200, 400, 100, 600]
 
-function returnSecondValue(getArray){
+function returnSecondValue(getArray){  // this is how to pass array into function
     return getArray[1]
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); //this is how to  directly pass array into function
