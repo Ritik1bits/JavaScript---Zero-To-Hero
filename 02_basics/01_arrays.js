@@ -36,5 +36,5 @@ console.log("B ", myArr);
 
 const myn2 = myArr.splice(1, 3) // splice is used to remove/replace includes last elements in range.
 console.log("C ", myArr);   
-//  using splice will modify the original array // interview question
+                                //  using splice will modify the original array // interview question
 console.log(myn2);           
