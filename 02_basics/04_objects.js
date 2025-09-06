@@ -39,7 +39,7 @@ const users = [  // databse returns array of objects
         email: "h@gmail.com"
     },
     {
-        id: 1,
+             id: 1,
         email: "h@gmail.com"
     },
     {
@@ -71,8 +71,8 @@ const {courseInstructor: instructor} = course  //  object destructuring({courseI
 // console.log(courseInstructor);
 console.log(instructor);
 
-// {  // when we use fetch method to call api , api fetches result(cab=n be an object or an array) in json format(similar to object but not same)  where keys will always be syntaxwise string , and values will also be string apart from boolean, number type
-//   this json result is converted into an object to extract values  
+// {                        // when we use fetch method to call api , api fetches result(can be an object or an array) in json format(similar to object but not same)  where keys will always be syntaxwise string , and values will also be string apart from boolean, number type
+                           //   this json result is converted into an object to extract values  
 "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
