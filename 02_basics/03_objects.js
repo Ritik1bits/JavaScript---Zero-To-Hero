@@ -22,7 +22,7 @@ const JsUser = {
 
 //Ways to access an object keys:
 // console.log(JsUser.email)// using dot notation is used  -> when keys are by default treated as string(without double quatation) in objects,so we use dot notation to access keys
-// console.log(JsUser["email"])// using square notation is used  -> when keys are explicitly defined as strings using double quatation in objects
+// console.log(JsUser["email"])// using square notation -> when keys are explicitly defined as strings use square notation only with double quatation whilw accessing
 // console.log(JsUser["full name"])// this key cant be accessed by dot notation since square notation asks to mention keys as strings(with double quotation)
 // console.log(JsUser[mySym]) // symbols are too accessed using square notation 
 
