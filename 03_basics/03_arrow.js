@@ -13,13 +13,14 @@ const user = {
 // user.username = "sam" // current context changed from hitesh to sam
 // user.welcomeMessage()
 
-// console.log(this);
+// console.log(this); // returning an empty object
 
 // global object in browser is window object
 
-// function chai(){
+//      function chai(){
 //     let username = "hitesh"
-//     console.log(this.username); // the above mechanism of 'this' keyword does not work in  function
+//     console.log(this);// returns what 'this' contains like  global values like browswer
+//     console.log(this.username); // the mechanism of (CURRENT CONTEXT) using 'this' keyword does not work in  function , it works in objects
 // }
 
 // chai()
