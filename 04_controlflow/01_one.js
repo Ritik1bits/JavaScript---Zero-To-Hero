@@ -40,15 +40,18 @@ const temperature = 41
 
 // }
 
-const userLoggedIn = true
+const userLoggedIn = true   // Real life use case scenarios
 const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (userLoggedIn && debitCard && 2==3) {
+if (userLoggedIn && debitCard && 2==3) {    // '&&' And operator both conditions to be true         
+                                           // check multiple conditions to evaluate to be true or false in order to allow a user for something to access
     console.log("Allow to buy course");
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
+if (loggedInFromGoogle || loggedInFromEmail) {    // OR operator -> either of the conditon should be true among multiple condtions
+    console.log("User logged in");                           // These things are used in conditional rendering for example : when user is  already logged in having server given token then simply change text of login button and show the user  logout button 
 }
+// These things are used in conditional rendering for example : when user is  already logged in having server given token then simply change text of login button and show the user  logout button 
+
