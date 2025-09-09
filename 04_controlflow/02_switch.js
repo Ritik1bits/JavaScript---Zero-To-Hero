@@ -1,22 +1,26 @@
-// switch (key) {
-//     case value:
-        
-//         break;
+//Syntax to write switch case
 
-//     default:
-//         break;
-// }
+/* switch (key) { 
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+ */
 
 const month = "march"
 
 switch (month) {
-    case "jan":
+    case "jan":                   // Switch statement is Case Sensitive -> means use all different data types in their format such as "string", num , etc.
         console.log("January");
-        break;
+        break;                
     case "feb":
         console.log("feb");
         break;
-    case "march":
+    case "march":                         // Break Statement is used to terminate the execution  followed after the case is matched 
+                                           // If break is not used  it will execute all the cases after it except the default case
         console.log("march");
         break;
     case "april":
