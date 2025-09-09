@@ -20,7 +20,7 @@ switch (month) {
         console.log("feb");
         break;
     case "march":                         // Break Statement is used to terminate the execution  followed after the case is matched 
-                                           // If break is not used  it will execute all the cases after it except the default case
+                                           // If break is not used  it will execute all the cases after it (like waterfall) except the default case
         console.log("march");
         break;
     case "april":
