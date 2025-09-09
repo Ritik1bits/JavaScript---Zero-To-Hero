@@ -1,7 +1,7 @@
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
-// const values = coding.forEach( (item) => {
+// const values = coding.forEach( (item) => {     //forEach loop doesnt not return any value generally
 //     //console.log(item);
 //     return item
 // } )
@@ -10,8 +10,8 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
-//     return num > 4
+// const newNums = myNums.filter( (num) => {     //filter also takes callback fn
+//     return num > 4                             // important : similar to arrow fn lecture , return is used along curly scope
 // } )
 
 // const newNums = []
