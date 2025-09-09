@@ -1,3 +1,4 @@
+// Truthy values are the values of strings that are assumed to be true  or false solely based on the variable without having compared them
 const userEmail = []
 
 if (userEmail) {
