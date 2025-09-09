@@ -19,7 +19,7 @@ for (let i = 1; i <= 10; i++) {
    }
     
 }
-let myArray = ["flash", "batman", "superman"]
+let myArray = ["flash", "batman", "superman"]   // loop on array , loop  iterates on array  on length-1 and if loop executes till length loop goes out of array and returns undefined
 //console.log(myArray.length);
 for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
@@ -33,7 +33,7 @@ for (let index = 0; index < myArray.length; index++) {
 // for (let index = 1; index <= 20; index++) {
 //     if (index == 5) {
 //         console.log(`Detected 5`);
-//         break
+//         break                     // break is used to terminate the following control
 //     }
 //    console.log(`Value of i is ${index}`);
     
@@ -42,7 +42,7 @@ for (let index = 0; index < myArray.length; index++) {
 for (let index = 1; index <= 20; index++) {
     if (index == 5) {
         console.log(`Detected 5`);
-        continue
+        continue                     // continue is used to skip any specific iteration
     }
    console.log(`Value of i is ${index}`);
     
