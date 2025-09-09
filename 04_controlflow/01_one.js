@@ -23,9 +23,11 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2"); // Implicit scope --> syntax for writing 'if' without curly braces in one line or in multiple lines using ','
+//                                                                 but dont use implicit scope for multiple lines since it looks very unreadible 
 
-// if (balance < 500) {
+
+// if (balance < 500) {                               //nesting if
 //     console.log("less than 500");
 // } else if (balance < 750) {
 //     console.log("less than 750");
