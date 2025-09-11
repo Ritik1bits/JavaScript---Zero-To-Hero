@@ -18,22 +18,24 @@
 <script>
     const parent = document.querySelector('.parent')
     // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[1].innerHTML);
+    // console.log(parent.children);                 // gives HTMLcollection ehich is almost array like property
+    // console.log(parent.children[1].innerHTML);    // since it is array like property we access it in the same way as we access array
 
-    // for (let i = 0; i < parent.children.length; i++) {
-    //      console.log(parent.children[i].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {   //since it is array like property we can for loop it
+    //      console.log(parent.children[i].innerHTML);            
         
-    // }
-    parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    }
+   // parent.children[1].style.color = "orange"     // this is how we apply styles on child elemements using css property
+    // console.log(parent.firstElementChild);         // gives first element 
+    // console.log(parent.lastElementChild);         // gives last element
 
-    const dayOne = document.querySelector('.day')
+    //Query Selector(is an expensive operation it traverses the entire dom for a small change using thread) selects only the first element of specified class or id
+    const dayOne = document.querySelector('.day')    // selecting child class to go to parent
     // console.log(dayOne);
-    // console.log(dayOne.parentElement);
+    // console.log(dayOne.parentElement);             // this is how we can go to parent from child
     // console.log(dayOne.nextElementSibling);
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes); // gives number of nodes a parent class has , in this case it gives 9 , it count only 1 linebreak as a 'node element' , nodelist is itself a complex tree structure.
+    // optimization in web is important because DOM creates a complex tree structures
 </script>
 </html>
