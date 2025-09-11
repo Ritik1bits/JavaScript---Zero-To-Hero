@@ -14,13 +14,16 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)  // this can also be modified by storing in a variable then using append method on the varibale
+        li.innerHTML = `${langName}`    // innerHTML ib basic and unpotimized approach to take text becoz it traverses the whole dom tree everytime a new text added
+        document.querySelector('.language').appendChild(li) 
+        // this can also be modified by storing in a variable then using append method on the varibale but this is  not optimized :given below
+        // const passlang = document.querySelector('.language')
+        // passlang.appendChild(li)
     }
     addLanguage("python")
     addLanguage("typescript")
 
-    function addOptiLanguage(langName){
+    function addOptiLanguage(langName){        //This function works exactly same but more optimized than the above function.This fn avoids traversing the entire dom tree by only creating a text node  everytime when a new text added to list 
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
@@ -31,11 +34,12 @@
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
     //secondLang.innerHTML = "Mojo"
-    const newli = document.createElement('li')
+    
+    const newli = document.createElement('li')   //another way to edit
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
 
-    //edit
+    //edit   another way to edit
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
 
