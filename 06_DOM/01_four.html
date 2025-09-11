@@ -15,7 +15,7 @@
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
+        document.querySelector('.language').appendChild(li)  // this can also be modified by storing in a variable then using append method on the varibale
     }
     addLanguage("python")
     addLanguage("typescript")
