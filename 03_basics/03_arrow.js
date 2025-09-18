@@ -48,9 +48,11 @@ const chai =  () => { // Arrow function  syntax
 // const addTwo = (num1, num2) => ( num1 + num2 ) // same as above 
 
 const addTwo = (num1, num2) => ({username: "hitesh"}) // syntax used (both curly and round braces will be used ) to return object in an arrow function
+//console.log(addTwo(3, 4))
+const addTwo = () => ({username: "hitesh"})  // this too returns an object
+//console.log(addTwo())
 
 
-console.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]
